@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "scrmbl"
+version = "0.1.0"
+description = ""
+authors = ["etienne-napoleone <etienne@tomochain.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.5"
