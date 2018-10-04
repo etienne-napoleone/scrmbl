@@ -5,7 +5,7 @@ description = ""
 authors = ["etienne-napoleone <etienne@tomochain.com>"]
 
 [tool.poetry.dependencies]
-python = "*"
+python = "^3.5"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.5"
+pytest = "*"
