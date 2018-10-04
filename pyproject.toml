@@ -9,3 +9,5 @@ python = "^3.5"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
+flake8 = "^3.5"
+coveralls = "^1.5"

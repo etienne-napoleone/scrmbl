@@ -1,0 +1,32 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"
+before_install:
+  - pip install poetry
+install:
+  - poetry develop
+script:
+  - flake8 .
+  - coverage run --source scrmbl -m pytest -v
+  - coverage report
+  - coveralls
+before_deploy:
+  - poetry build
+deploy:
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    file_glob: true
+    file: dist/*
+    skip_cleanup: true
+    on:
+      tags: true
+      python: 3.6
+  - provider: pypi
+    user: $PYPI_USERNAME
+    password: $PYPI_PASSWORD
+    skip_cleanup: true
+    on:
+      tags: true
+      python: 3.6
