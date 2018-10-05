@@ -8,7 +8,7 @@ random.seed()
 
 
 def echo(message: str, charset: List[str] = charsets.ALL, speed: float = 0.05,
-         iterations: int = 2):
+         iterations: int = 2) -> None:
     "scrmbl print the given message"
     for line in message.split('\n'):
         echoed = ''
