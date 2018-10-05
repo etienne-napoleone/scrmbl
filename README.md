@@ -25,7 +25,7 @@ poetry add scrmbl
 Using pipenv:
 
 ```bash
-pipenv  install scrmbl
+pipenv install scrmbl
 ```
 
 ## Usage
