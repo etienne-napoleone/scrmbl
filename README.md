@@ -1,4 +1,4 @@
-# scrmbl <a href="https://gitter.im/scrmbl/Lobby"><img align="right" src="https://img.shields.io/badge/chat-on%20gitter-%234FB999.svg"></a><a href="https://coveralls.io/github/etienne-napoleone/scrmbl?branch=develop"><img align="right" src="https://coveralls.io/repos/github/etienne-napoleone/scrmbl/badge.svg?branch=develop"></a><a href="https://travis-ci.org/etienne-napoleone/scrmbl"><img align="right" src="https://travis-ci.org/etienne-napoleone/scrmbl.svg?branch=develop"></a>
+# scrmbl <a href="https://gitter.im/scrmbl/Lobby"><img align="right" src="https://img.shields.io/badge/chat-on%20gitter-%234FB999.svg"></a> <a href="https://coveralls.io/github/etienne-napoleone/scrmbl?branch=develop"><img align="right" src="https://coveralls.io/repos/github/etienne-napoleone/scrmbl/badge.svg?branch=develop"></a> <a href="https://travis-ci.org/etienne-napoleone/scrmbl"><img align="right" src="https://travis-ci.org/etienne-napoleone/scrmbl.svg?branch=develop"></a>
 
 🕵️ Library for "scrambled" printing in terminal
 
