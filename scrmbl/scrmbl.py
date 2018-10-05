@@ -1,6 +1,6 @@
-from typing import List
 import random
 import time
+from typing import List
 
 from scrmbl import charsets
 
