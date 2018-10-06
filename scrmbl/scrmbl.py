@@ -1,13 +1,14 @@
 import random
+import string
 import time
-from typing import List
 
-from scrmbl import charsets
 
 random.seed()
 
+ALL_CHARS = string.digits + string.ascii_letters + string.punctuation
 
-def echo(message: str, charset: List[str] = charsets.ALL, speed: float = 0.05,
+
+def echo(message: str, charset: str = ALL_CHARS, speed: float = 0.05,
          iterations: int = 2) -> None:
     "scrmbl print the given message"
     for line in message.split('\n'):
@@ -19,3 +20,4 @@ def echo(message: str, charset: List[str] = charsets.ALL, speed: float = 0.05,
             print('\r{}{}'.format(echoed, character), end='')
             echoed = echoed + character
         print()
+
