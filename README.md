@@ -43,20 +43,9 @@ pipenv install scrmbl
 'NSA HEADQUARTERS'
 
 # custom settings:
-# charset = List of characters to randomly iterate through
+# charset = String of characters to randomly iterate through
 # speed = Milliseconds to wait between each iteration
 # iterations = number of iterations before printing the final character
->>> scrmbl.echo('NSA OFFICE', charset=['N', 'S', 'A'], speed=0.2, iterations=6)
-'NSA OFFICE'
-
-# premade charsets:
-# LETTERS_LOWER
-# LETTERS_UPPER
-# FIGURES
-# SPECIALS
-# LETTERS (LETTERS_LOWER + LETTERS_UPPER)
-# ALPHANUMERICS (LETTERS + FIGURES)
-# ALL (ALPHANUMERICS + SPECIALS)
->>> scrmbl.echo('NSA OFFICE', charset=scrmbl.charsets.LETTERS)
+>>> scrmbl.echo('NSA OFFICE', charset=['ABCDefg/-'], speed=0.2, iterations=6)
 'NSA OFFICE'
 ```
