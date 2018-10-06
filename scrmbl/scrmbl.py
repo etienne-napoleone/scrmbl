@@ -20,4 +20,3 @@ def echo(message: str, charset: str = ALL_CHARS, speed: float = 0.05,
             print('\r{}{}'.format(echoed, character), end='')
             echoed = echoed + character
         print()
-
