@@ -46,6 +46,6 @@ pipenv install scrmbl
 # charset = String of characters to randomly iterate through
 # speed = Milliseconds to wait between each iteration
 # iterations = number of iterations before printing the final character
->>> scrmbl.echo('NSA OFFICE', charset=['ABCDefg/-'], speed=0.2, iterations=6)
+>>> scrmbl.echo('NSA OFFICE', charset='ABCDefg/-', speed=0.2, iterations=6)
 'NSA OFFICE'
 ```

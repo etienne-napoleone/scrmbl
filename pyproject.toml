@@ -12,8 +12,13 @@ keywords = ["print", "library", "movie", "action", "scramble"]
 
 [tool.poetry.dependencies]
 python = "^3.5"
+click = "^7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
 flake8 = "^3.5"
 coveralls = "^1.5"
+pytest-cov = "^2.6"
+
+[tool.poetry.scripts]
+scrmbl = 'scrmbl:cli'

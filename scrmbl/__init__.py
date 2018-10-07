@@ -1,5 +1,7 @@
-from scrmbl.scrmbl import echo
+from scrmbl.main import echo
+from scrmbl.cli import cli
+import scrmbl.version as version
 
-__all__ = ['echo']
+__all__ = ['echo', 'cli']
 
-__version__ = '0.1.1'
+__version__ = version.__version__
