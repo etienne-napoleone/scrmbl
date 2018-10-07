@@ -1,3 +1,4 @@
+import re
 import sys
 
 import click
@@ -24,11 +25,18 @@ def cli(message: str, speed: float, iterations: int, charset: str) -> None:
             raise click.UsageError('"MESSAGE" is empty. No argument or stdin.')
         for line in sys.stdin:
             message += line
+        message = _strip_ansi_colors(message)
     if charset:
         with click.open_file(charset) as f:
             charset_content = f.read()
         charset_content = charset_content.replace('\n', '')
     else:
         charset_content = None
-    scrmbl.echo(message.strip(), charset=charset_content, speed=speed,
+    scrmbl.echo(message, charset=charset_content, speed=speed,
                 iterations=iterations)
+
+
+def _strip_ansi_colors(message: str) -> str:
+    """Strip ANSI color codes"""
+    escape_codes = re.compile(r'\x1B\[[0-?]*[ -/]*[@-~]')
+    return escape_codes.sub('', message)
