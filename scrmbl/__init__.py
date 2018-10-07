@@ -1,6 +1,5 @@
-from scrmbl.scrmbl import echo
-from scrmbl.scrmbl import charsets
+from scrmbl.main import echo
 
-__all__ = ['echo', 'charsets']
+__all__ = ['echo']
 
-__version__ = '0.1.1'
+__version__ = '1.0.0'
