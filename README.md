@@ -2,7 +2,7 @@
 
 Library and CLI for "scrambled" printing in terminal.
 
-Have you ever wanted your text to look like some corny action movie?
+Have you ever wanted to print your text like some corny action movies?
 
 ![demo gif](https://raw.githubusercontent.com/etienne-napoleone/scrmbl/develop/demo.gif)
 
