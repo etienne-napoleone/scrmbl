@@ -18,12 +18,12 @@ def echo(message: str, charset: str = ALL_CHARS, speed: float = 0.05,
     for line in message.split('\n'):
         echoed = ''
         for char in line:
-            if char == ' ':
-                echoed += char
-                continue
             for _ in range(iterations):
-                ran_char = random.choice(charset)
-                click.echo('\r{0}{1}'.format(echoed, ran_char), nl=False)
+                if char != ' ':
+                    ran_char = random.choice(charset)
+                    click.echo('\r{}{}'.format(echoed, ran_char), nl=False)
+                else:
+                    click.echo('\r{}'.format(echoed), nl=False)
                 time.sleep(speed)
             echoed += char
             # wrap if line longer than console cols

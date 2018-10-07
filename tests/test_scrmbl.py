@@ -2,7 +2,7 @@ import scrmbl
 
 
 def test_version():
-    assert scrmbl.__version__ == '0.1.1'
+    assert scrmbl.__version__ == '1.0.0'
 
 
 def test_echo_single(capsys):
