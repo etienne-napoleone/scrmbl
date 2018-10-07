@@ -15,10 +15,6 @@ def echo(message: str, charset: str = ALL_CHARS, speed: float = 0.05,
     """Scrmbl print the given message."""
     if not charset:
         charset = ALL_CHARS
-
-    # strip \n and \r from charset
-    charset = charset.replace('\n', '').replace('\r', '')
-
     for line in message.split('\n'):
         echoed = ''
         for char in line:
@@ -27,8 +23,7 @@ def echo(message: str, charset: str = ALL_CHARS, speed: float = 0.05,
                 click.echo('\r{0}{1}'.format(echoed, ran_char), nl=False)
                 time.sleep(speed)
             echoed += char
-
-            # this logic is so lines longer than the console wrap around
+            # wrap if line longer than console cols
             if len(echoed) >= COLS - 1:
                 click.echo('\r' + echoed)
                 echoed = ''
