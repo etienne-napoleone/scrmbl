@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scrmbl"
-version = "0.1.1"
+version = "1.0.0"
 description = "Library for scrambled printing in terminal"
 authors = ["Etienne Napoleone <etienne@tomochain.com>"]
 readme = "README.md"
