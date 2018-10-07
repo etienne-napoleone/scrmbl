@@ -1,9 +1,8 @@
 import scrmbl
-from scrmbl import __version__
 
 
 def test_version():
-    assert __version__ == '0.1.1'
+    assert scrmbl.__version__ == '0.1.1'
 
 
 def test_echo_single(capsys):
