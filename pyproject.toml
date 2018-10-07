@@ -21,4 +21,4 @@ coveralls = "^1.5"
 pytest-cov = "^2.6"
 
 [tool.poetry.scripts]
-scrmbl = 'scrmbl:cli'
+scrmbl = 'scrmbl.cli:cli'
