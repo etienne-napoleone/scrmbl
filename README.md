@@ -6,6 +6,8 @@ Have you ever wanted to print your text like some corny action movies?
 
 ![demo gif](https://raw.githubusercontent.com/etienne-napoleone/scrmbl/develop/demo.gif)
 
+note: the `%` are coming from my tty recorder
+
 ## Requirements
 
 - Tested on Python >= 3.5
