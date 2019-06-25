@@ -4,7 +4,9 @@ Library and CLI for "scrambled" printing in terminal.
 
 Have you ever wanted to print your text like some corny action movies?
 
-![demo gif](https://raw.githubusercontent.com/etienne-napoleone/scrmbl/develop/demo.gif)
+<p align="center">
+  <img width="75%" src="https://raw.githubusercontent.com/etienne-napoleone/scrmbl/develop/demo.gif"></a>
+</p>
 
 note: the `%` are coming from my tty recorder
 
