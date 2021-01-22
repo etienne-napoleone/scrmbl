@@ -2,7 +2,7 @@
 name = "scrmbl"
 version = "1.0.0"
 description = "Library for scrambled printing in terminal"
-authors = ["Etienne Napoleone <etienne@tomochain.com>"]
+authors = ["Etienne Napoleone <etienne.napoleone@gmail.com>"]
 readme = "README.md"
 license = "MIT"
 homepage = "https://github.com/etienne-napoleone/scrmbl"
